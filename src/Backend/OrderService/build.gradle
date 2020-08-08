@@ -51,9 +51,10 @@ dependencies {
 
 
 
-task wrapper(type: Wrapper) {
-    gradleVersion = '2.1'
+wrapper{
+    gradleVersion = '6.5'
 }
+
 
 task loadBuildInformation(type: BuildInformationTask) {
     versionFile = file('version.properties')
