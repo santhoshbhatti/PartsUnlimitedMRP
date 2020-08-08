@@ -49,7 +49,6 @@ dependencies {
 
 wrapper{
     gradleVersion = '6.5'
-    distributionType = Wrapper.DistributionType.BIN
 }
 
 task loadBuildInformation(type: BuildInformationTask) {
