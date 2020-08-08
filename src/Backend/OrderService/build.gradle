@@ -45,8 +45,11 @@ dependencies {
 	compile group: 'com.microsoft.azure', name: 'applicationinsights-core', version: '1.+'
 }
 
-task wrapper(type: Wrapper) {
-    gradleVersion = '2.1'
+
+
+wrapper{
+    gradleVersion = '6.5'
+    distributionType = Wrapper.DistributionType.BIN
 }
 
 task loadBuildInformation(type: BuildInformationTask) {
